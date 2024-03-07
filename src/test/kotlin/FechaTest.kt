@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class FechaTest {
@@ -9,7 +8,7 @@ class FechaTest {
 
         @Test
         fun valida() {
-            val fch = Fecha(15, 13, 2023)
+            val fch = Fecha(15, 12, 2023)
             assertTrue (fch.valida())
         }
 
@@ -37,10 +36,10 @@ class FechaTest {
 
         @Test
         fun fechaValidaFebreroBisiesto() {
-            val Fecha = Fecha(29, 2, 2024)
-            assertTrue (Fecha.valida())
+            val fecha = Fecha(29, 2, 2024)
+            assertTrue (fecha.valida())
             println("Fecha valida Bisiesto")
-            println(Fecha.valida())
+            println(fecha.valida())
         }
     }
 }
